@@ -2,7 +2,6 @@ import numpy as np
 import scipy.stats
 import pandas as pd
 
-
 def compare_averages(filename):
     """
     Performs a t-test on two sets of baseball data (left-handed and right-handed hitters).

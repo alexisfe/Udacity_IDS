@@ -25,7 +25,8 @@ def lineplot(hr_year_csv):
 
     hr_year = pd.read_csv(hr_year_csv)
 
-    gg = ggplot(hr_year, aes(x='yearID', y='HR')) + geom_point(color='red') + geom_line(color='red') + \
-         ggtitle('Homeruns by year') + xlab('Year') + ylab('Homeruns')
+    gg = ggplot(hr_year, aes(x='yearID', y='HR')) \
+         + geom_point(color='red') + geom_line(color='red') \
+         + ggtitle('Homeruns by year') + xlab('Year') + ylab('Homeruns')
 
     return gg
